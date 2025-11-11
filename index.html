@@ -8,33 +8,42 @@
 </head>
 <body>
 
-    <header>
-
-        <h1>Lab 2.1</h1>
-
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="about">ABOUT</a></li>
-                <li><a href="contact">CONTACT</a></li>
+    <header id="header" role="banner" aria-label="Site Header">
+        <h1 id="title">Lab 2.1</h1>
+        <nav id="nav_bar" role="navigation" aria-label="Main Navigation">
+            <ul id="main_list">
+                <li class="nav_btn"><a href="#" aria-current="page">HOME</a></li>
+                <li class="nav_btn"><a href="#about">ABOUT</a></li>
+                <li class="nav_btn"><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main>
+    <main id="container" role="main">
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">About Title</h2>
+            <p class="desc_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem illum magnam beatae voluptatum maiores corrupti at eveniet, consectetur repellat aliquid non est eligendi, voluptatibus nisi, facilis minus! Ex, quas ad!</p>
+        </section>
 
-            <section>
+        <article id="article" aria-labelledby="article-title">
+            <h2 id="article-title">Article Title</h2>
+            <p class="desc_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ad similique repellat? Voluptate esse ducimus perspiciatis repudiandae culpa aut vel molestiae unde temporibus deserunt a odit dolore possimus, dolores voluptates?</p>
+        </article>
 
-            </section>
-
-            <article>
-
-            </article>
-
+        <div id="contact" role="region" aria-label="Contact Section">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="Enter First Name" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <label for="textarea"></label>
+            <textarea name="message" id="textarea" placeholder="Enter Message"></textarea>
+            <input type="submit" value="Submit">
+        </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; SalDev</p>
     </footer>
     

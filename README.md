@@ -2,7 +2,7 @@
 
 In this lab, you will explore the key principles of accessible web design using an interactive lesson from Scrimba. Accessibility ensures that your web applications are usable by everyone, including individuals with disabilities. The principles and techniques covered in this lab will help you create inclusive web experiences.
 
-## Objective
+## Objectives
 
 By the end of this lab, you will have demonstrated your ability to:
 
